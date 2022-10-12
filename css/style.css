@@ -21,6 +21,7 @@ body {
     left: 0;
     height: 100%;
     width: var(--width-sb);
+    z-index: 100;
 }
 
 .sidebar a {
@@ -66,7 +67,7 @@ body {
 
 .content .content__para {
     text-align: center;
-    padding: 38px 14vw; 
+    padding: 38px 192px; 
     background: #EFEFEF;
 }
 
@@ -116,49 +117,6 @@ body {
     padding: 30px 0;
 }
 
-@media screen and (max-width: 767px) {
-html {
-    --width-sb: 100px;
-}
-
-    body {
-        font-size: 15px;
-    }
-
-.content .content__logo {
-    width: 50%;
-    height: auto;
-}
-
-    .content .content__list {
-        flex-direction: column;
-    }
-
-    .content .content__list .content__list-item {
-        text-align: center;
-    }
-
-    .content .content__para {
-        padding: 24px ;
-    }
-
-    .content .content__list .content__list-item:not(:last-child) {
-    margin: 0;
-    margin-bottom: 24px;
-    }
-
-    .content .content__list .content__list-item .group-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-        .content .content__list .content__list-item .group-content img {
-            margin-right: 0;
-            margin-bottom: 24px;
-        }
-
-}
-
 @media screen and (max-width: 992px) {
     html {
             --width-sb: 120px;
@@ -173,9 +131,13 @@ html {
     }
 
         .content .content__logo {
-            width: 60%;
+            width: 200px;
             height: auto;
         }
+
+                        .content .content__para {
+                            padding: 32px;
+                        }
 
     .content .content__list {
         flex-direction: column;
@@ -196,6 +158,50 @@ html {
     }
 
     .content .content__list .content__list-item .group-content img {
+        margin-bottom: 24px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        --width-sb: 100px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    .content .content__logo {
+        width: 140px;
+        height: auto;
+    }
+
+
+    .content .content__list {
+        flex-direction: column;
+    }
+
+    .content .content__list .content__list-item {
+        text-align: center;
+    }
+
+    .content .content__para {
+        padding: 24px;
+    }
+
+    .content .content__list .content__list-item:not(:last-child) {
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    .content .content__list .content__list-item .group-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .content__list .content__list-item .group-content img {
+        margin-right: 0;
         margin-bottom: 24px;
     }
 
