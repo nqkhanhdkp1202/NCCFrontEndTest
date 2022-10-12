@@ -66,7 +66,7 @@ body {
 
 .content .content__para {
     text-align: center;
-    padding: 38px 269px; 
+    padding: 38px 14vw; 
     background: #EFEFEF;
 }
 
@@ -126,14 +126,9 @@ html {
     }
 
 .content .content__logo {
-    width: 40%;
+    width: 50%;
     height: auto;
 }
-
-
-    .content .content__para {
-        padding: 24px 32px;
-    }
 
     .content .content__list {
         flex-direction: column;
@@ -141,6 +136,10 @@ html {
 
     .content .content__list .content__list-item {
         text-align: center;
+    }
+
+    .content .content__para {
+        padding: 24px ;
     }
 
     .content .content__list .content__list-item:not(:last-child) {
@@ -173,9 +172,10 @@ html {
         padding: 0 24px;
     }
 
-    .content .content__para {
-        padding: 24px 32px;
-    }
+        .content .content__logo {
+            width: 60%;
+            height: auto;
+        }
 
     .content .content__list {
         flex-direction: column;
